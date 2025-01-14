@@ -15,28 +15,24 @@
 // - stampare console
 
 const arrayMails = ["daniloportelli@hotmail.it", "grazianaciccarelli@hotmail.it", "alessiozaccato@hotmail.it"];
-
-// let inserisciMail = prompt("Inserisci qui la tua Mail")
-
-const verifyIdentity = [0||1||2]
-console.log(verifyIdentity)
-
-
+let inserisciMail = prompt("Inserisci qui la tua Mail")
+let verify = false
 
 for (let i = 0; i < arrayMails.length; i++){
   const mail = arrayMails[i]
-  console.log(`${mail}`)
 
-  
-  // if(inserisciMail == verifyIdentity){
-  //   console.log("Puoi accedere alla festa")
-  // } else if (inserisciMail = mail)  { 
-  //   console.log("Non puoi accedere alla festa")
-  // } else 
-  //   console.log("Non puoi accedere alla festa")
-
-
+ if(inserisciMail = mail){
+  verify = true
+  console.log("Puoi accedere alla festa")
+ } else 
+  console.log("Non puoi accedere alla festa")
 }
+
+
+
+
+
+
 
 // Gioco dei dadi
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
