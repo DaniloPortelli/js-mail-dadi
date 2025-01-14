@@ -9,6 +9,35 @@
 // Non è necessario provvedere alla validazione delle email
 
 
+// - creare array mail fittizie
+// - creare prompt richiesta mail
+// - creare condizione di verifica mail richiesta 
+// - stampare console
+
+const arrayMails = ["daniloportelli@hotmail.it", "grazianaciccarelli@hotmail.it", "alessiozaccato@hotmail.it"];
+
+// let inserisciMail = prompt("Inserisci qui la tua Mail")
+
+const verifyIdentity = [0||1||2]
+console.log(verifyIdentity)
+
+
+
+for (let i = 0; i < arrayMails.length; i++){
+  const mail = arrayMails[i]
+  console.log(`${mail}`)
+
+  
+  // if(inserisciMail == verifyIdentity){
+  //   console.log("Puoi accedere alla festa")
+  // } else if (inserisciMail = mail)  { 
+  //   console.log("Non puoi accedere alla festa")
+  // } else 
+  //   console.log("Non puoi accedere alla festa")
+
+
+}
+
 // Gioco dei dadi
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
@@ -16,32 +45,18 @@
 // Che ci sia un array da qualche parte?
 // Se dobbiamo confrontare qualcosa che "cosa" ci serve?
 
+const randomNumberCpu = Math.floor(Math.random() * 6) + 1;
+  console.log(`Il punteggio di Cpu e' ${randomNumberCpu}`)
 
-// - creare array mail fittizie
-// - creare prompt richiesta mail
-// - creare condizione di verifica mail richiesta 
-// - stampare console
+const randomNumberUser = (Math.floor(Math.random() * 6) + 1);
+  console.log(`Il punteggio di User e' ${randomNumberUser}`)
 
-const arrayMail = ["daniloportelli@hotmail.it", "grazianaciccarelli@hotmail.it", "alessiozaccato@hotmail.it"];
-  console.log(arrayMail)
-
-// let inserisciMail = prompt("Inserisci qui la tua Mail")
-
-
-for (i = 0; i < arrayMail.length; i++){
-  let mails = arrayMail[i]
-  console.log(`${mails}`)
-
-  
-  if(inserisciMail === mails){
-    console.log("Puoi accedere alla festa")
-  } else if (inserisciMail = mails)  { 
-    console.log("Non puoi accedere alla festa")
+  if(randomNumberCpu > randomNumberUser){
+    console.log("Cpu wins!")
+  } else if (randomNumberCpu < randomNumberUser) {
+    console.log("User wins!")
   } else 
-    console.log("Non puoi accedere alla festa")
-
-
-}
+    console.log("Draw!")
 
 
 
