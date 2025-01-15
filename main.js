@@ -19,15 +19,18 @@ let inserisciMail = prompt("Inserisci qui la tua Mail")
 let verify = false
 
 for (let i = 0; i < arrayMails.length; i++){
-  const mail = arrayMails[i]
+  let mail = arrayMails[i]
 
- if(inserisciMail = mail){
+ if(mail === inserisciMail){
   verify = true
-  console.log("Puoi accedere alla festa")
- } else 
-  console.log("Non puoi accedere alla festa")
+}
 }
 
+if (verify === true){
+  console.log("Puoi accedere alla festa")
+} else {
+  console.log("Non puoi accedere alla festa")
+}
 
 
 
